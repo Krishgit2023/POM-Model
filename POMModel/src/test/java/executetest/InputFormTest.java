@@ -16,7 +16,14 @@ public class InputFormTest extends BaseClass {
 		
 	}
 	
-	
+	@Test
+	public void verifySingleCheckboxClicked() {
+		inputformpage = new InputFormPage(driver);
+		
+		inputformpage.clickonInputForm();
+		inputformpage.clickonCheckboxDemo();
+		
+	}
 	
 	
 

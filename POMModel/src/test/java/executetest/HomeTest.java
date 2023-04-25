@@ -20,6 +20,13 @@ public class HomeTest extends BaseClass {
 	}
 	
 	@Test
+	public void verifyHeaders() {
+		homePage = new HomePage(driver);
+		homePage.gethomepageheaders();
+		 
+	}
+	
+	@Test
 	public void verifyShowMessage() {
 		
 	}
