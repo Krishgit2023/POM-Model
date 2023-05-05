@@ -5,10 +5,12 @@ import org.testng.annotations.Test;
 
 import basepackage.BaseClass;
 import elementrepository.HomePage;
+import utilities.UtilityClass;
 
 public class HomeTest extends BaseClass {
 	
 	HomePage homePage;
+	
 	
 	@Test
 	public void verifyObsquraLogo() {
@@ -28,6 +30,13 @@ public class HomeTest extends BaseClass {
 	
 	@Test
 	public void verifyShowMessage() {
+		
+	}
+	
+	@Test
+	public void verifyExcelRead() {
+		UtilityClass utility = new UtilityClass(driver);
+		utility.getExceldata(0,0);
 		
 	}
 

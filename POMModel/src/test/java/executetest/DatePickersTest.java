@@ -21,5 +21,15 @@ public class DatePickersTest extends BaseClass{
 		datePickersPage.clickonDatePickers();
 		datePickersPage.showDate();
 	}
+	
+	
+	@Test
+	public void verifyDatePicker() {
+		String date = "22-03-2026";
+		datePickersPage = new DatePickersPage(driver);
+		datePickersPage.clickonDatePickers();
+		datePickersPage.selectDate(date);
+		
+	}
 
 }

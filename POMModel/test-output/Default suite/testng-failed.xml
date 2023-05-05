@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executetest.AlertAndModalsTest">
+      <class name="executetest.DatePickersTest">
         <methods>
           <include name="launchObsquraApplication"/>
-          <include name="verifyAllAlerts"/>
           <include name="closeBrowser"/>
+          <include name="verifyDatePicker"/>
         </methods>
-      </class> <!-- executetest.AlertAndModalsTest -->
+      </class> <!-- executetest.DatePickersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
